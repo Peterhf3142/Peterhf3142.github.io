@@ -21,15 +21,10 @@
         <p style="height:20px" id="demo"></p>
     </div>
 
-    <div class="col" name="globalMapSelector">
-        <div id="map" class="rounded">
 
-        </div>
+    <div id="map" class="rounded">
 
     </div>
-
-
-
 
 </body>
 
