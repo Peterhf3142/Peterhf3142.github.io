@@ -8,12 +8,7 @@
     <!--build:css css/main.css-->
     <link rel="stylesheet" href="style.css">
     <!-- endbuild-->
-    <!-- build:js js/main.js-->
-    <script src="script.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBpCWDtOukjD5wmNsrxnUrDHLwas6TQSo&callback=initMap"></script>
-    <!-- endbuild-->
+
     <title>Document</title>
 </head>
 
@@ -21,7 +16,9 @@
     <h2>JavaScript addEventListener()</h2>
     <p>Test to see how JS works when hosted on github.</p>
     <button id="myBtn">Try it</button>
-    <p id="demo"></p>
+    <div style="height:20px">
+        <p style="height:20px" id="demo"></p>
+    </div>
 
     <div class="col" name="globalMapSelector">
         <div id="map" class="rounded">
@@ -35,6 +32,11 @@
 
 </body>
 
-
+<!-- build:js js/main.js-->
+<script src="script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBpCWDtOukjD5wmNsrxnUrDHLwas6TQSo&callback=initMap"></script>
+<!-- endbuild-->
 
 </html>
