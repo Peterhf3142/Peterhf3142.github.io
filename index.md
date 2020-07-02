@@ -8,6 +8,12 @@
     <!--build:css css/main.css-->
     <link rel="stylesheet" href="style.css">
     <!-- endbuild-->
+    <!-- build:js js/main.js-->
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBpCWDtOukjD5wmNsrxnUrDHLwas6TQSo&callback=initMap"></script>
+    <!-- endbuild-->
     <title>Document</title>
 </head>
 
@@ -28,12 +34,7 @@
 
 
 </body>
-<!-- build:js js/main.js-->
-<script src="script.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBpCWDtOukjD5wmNsrxnUrDHLwas6TQSo&callback=initMap"></script>
-<!-- endbuild-->
+
 
 
 </html>
