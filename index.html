@@ -54,55 +54,56 @@
     </div>
     <div class="container.fluid">
 
-        <div class="row"></div>
-        <div class="col-lg-5" id="searchqs">
-            <div id="arrival" class="form-group  m-2">
-                <label>Arrival date</label>
-                <input type="date" class="form-control py-4 px-4 mr-2 mb-2" placeholder="arrival date">
+        <div class="row">
+            <div class="col-lg-5" id="searchqs">
+                <div id="arrival" class="form-group  m-2">
+                    <label>Arrival date</label>
+                    <input type="date" class="form-control py-4 px-4 mr-2 mb-2" placeholder="arrival date">
+
+                </div>
+                <div id="departure" class="form-group  m-2">
+                    <label>Departure date</label>
+                    <input type="date" class="form-control py-4 px-4  mr-2 mb-2" placeholder="Departure date"
+                        id="departuredate">
+
+                </div>
+                <div id="LOA" class="form-group  m-2">
+                    <label>Overall length</label>
+                    <input class="form-control py-4 px-4 " input type="number"
+                        placeholder="to nearest metre (round up!) e.g. 8m">
+                </div>
+                <div id="beam" class="form-group m-2">
+                    <label>Boat maximum width (beam)</label>
+                    <input type="number" class="form-control py-4 px-4 mr-2 mb-2"
+                        placeholder="to nearest 1/10th of a metre (round up) e.g. 5.4m">
+
+                </div>
+                <div id="draft" class="form-group  m-2">
+                    <label rows="3">Boat draft (minimum depth of water (m) you're happy with!)</label>
+                    <input type="number" class="form-control py-4 px-4 mr-2 mb-2  pb-4" style="
+                align-self:top"
+                        placeholder="to nearest 1/10th of a metre (round up) e.g. 1.4m (enter '0' if you are ok to moor on drying moorings)">
+
+                </div>
 
             </div>
-            <div id="departure" class="form-group  m-2">
-                <label>Departure date</label>
-                <input type="date" class="form-control py-4 px-4  mr-2 mb-2" placeholder="Departure date"
-                    id="departuredate">
+            <div class="col-lg-1" class="filler"></div>
 
+            <div id="map" class="col-lg-5">
             </div>
-            <div id="LOA" class="form-group  m-2">
-                <label>Overall length</label>
-                <input class="form-control py-4 px-4 " input type="number"
-                    placeholder="to nearest metre (round up!) e.g. 8m">
-            </div>
-            <div id="beam" class="form-group m-2">
-                <label>Boat maximum width (beam)</label>
-                <input type="number" class="form-control py-4 px-4 mr-2 mb-2" placeholder="to nearest 10th of a metre">
 
-            </div>
-            <div id="draft" class="form-group  m-2">
-                <label rows="3">Boat draft (minimum depth of water (m) you're happy with!)</label>
-                <input type="number" class="form-control py-4 px-4 mr-2 mb-2  pb-4" style="
-                align-self:top" placeholder="enter '0' if you are ok with drying moorings)">
+            <div class="col-lg-1" class="filler"></div>
 
-            </div>
         </div>
 
-        <div class="col-lg-1" class="filler" style=background:#212529></div>
-
-
-
-        <div id="map" class="col-lg-5">
-        </div>
-
-        <div class="col-lg-1" class="filler" style=background:#212529></div>
-    </div>
 
 
 
 
+        <script async=false
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBpCWDtOukjD5wmNsrxnUrDHLwas6TQSo&callback=initMap"></script>
 
-    <script async=false
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBpCWDtOukjD5wmNsrxnUrDHLwas6TQSo&callback=initMap"></script>
-
-    <script src="js/main.js"></script>
+        <script src="js/main.js"></script>
 
 
 </body>
