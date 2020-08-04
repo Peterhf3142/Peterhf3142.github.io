@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-right">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-right">
 
 
         <a class="navbar-brand"><img src="img/PMB-logo-v2.png" width=auto height="40px"></img>
@@ -30,11 +30,16 @@
 
         <div class="collapse navbar-collapse" id="collabsableNavBar">
             <ul class="nav navbar-nav ml-auto mt-2 mt-lg-0 ">
-                <li class="nav-item">
+                <li class="nav-item ">
                     <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="loginform.html">Login/Register<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="loginform.html"
+                        onclick="document.getElementById('id01').style.display='block'">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="signup.html">Signup</a>
+                </li>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="TandCs.html">Terms & conditions</a>
@@ -45,12 +50,13 @@
 
     </nav>
 
-    <div class="container">
+
+    <div class="container.fluid" id="lgin">
         <form action="/action_page.php">
             <div class="row">
-                <h2 style="text-align:center">Login with Social Media or Manually</h2>
-
-
+                <div class="col">
+                    <h2 style="text-align:left"> Login with Social Media or with email</h2>
+                </div>
                 <div class="col">
                     <a href="#" class="fb btn">
                         <i class="fa fa-facebook fa-fw"></i> Login with Facebook
@@ -65,10 +71,10 @@
 
                 <div class="col">
                     <div class="hide-md-lg">
-                        <p>Or sign in manually:</p>
+                        <p>Or email:</p>
                     </div>
 
-                    <input type="text" name="username" placeholder="Username" required>
+                    <input type="text" name="email" placeholder="email" required>
                     <input type="password" name="password" placeholder="Password" required>
                     <input type="submit" value="Login">
                 </div>
@@ -76,7 +82,6 @@
             </div>
         </form>
     </div>
-
     <div class="bottom-container">
         <div class="row">
             <div class="col">
