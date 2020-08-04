@@ -17,92 +17,92 @@
 </head>
 
 <body>
+    <div>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-right">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-right">
 
 
-        <a class="navbar-brand"><img src="img/PMB-logo-v2.png" width=auto height="40px"></img>
-            <span><em><strong>Visitors moorings</strong></em>: select & book, online</span></a>
+            <a class="navbar-brand"><img src="img/PMB-logo-v2.png" width=auto height="40px"></img>
+                <span><em><strong>Visitors moorings</strong></em>: select & book, online</span></a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collabsableNavBar"
-            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collabsableNavBar"
+                aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse" id="collabsableNavBar">
-            <ul class="nav navbar-nav ml-auto mt-2 mt-lg-0 ">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="loginform.html"
-                        onclick="document.getElementById('id01').style.display='block'">Login</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="signup.html">Signup</a>
-                </li>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="TandCs.html">Terms & conditions</a>
-                </li>
-            </ul>
+            <div class="collapse navbar-collapse" id="collabsableNavBar">
+                <ul class="nav navbar-nav ml-auto mt-2 mt-lg-0 ">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="loginform.html"
+                            onclick="document.getElementById('id01').style.display='block'">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="signup.html">Signup</a>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="TandCs.html">Terms & conditions</a>
+                    </li>
+                </ul>
 
-        </div>
+            </div>
 
-    </nav>
-
+        </nav>
+    </div>
     <div class="container.fluid">
 
-        <div class="row">
-            <div class="col-lg-5" id="searchqs">
-                <div id="arrival" class="form-group  m-2">
-                    <label>Arrival date</label>
-                    <input type="date" class="form-control py-4 px-4 mr-2 mb-2" placeholder="arrival date">
+        <div class="row"></div>
+        <div class="col-lg-5" id="searchqs">
+            <div id="arrival" class="form-group  m-2">
+                <label>Arrival date</label>
+                <input type="date" class="form-control py-4 px-4 mr-2 mb-2" placeholder="arrival date">
 
-                </div>
-                <div id="departure" class="form-group  m-2">
-                    <label>Departure date</label>
-                    <input type="date" class="form-control py-4 px-4  mr-2 mb-2" placeholder="Departure date"
-                        id="departuredate">
+            </div>
+            <div id="departure" class="form-group  m-2">
+                <label>Departure date</label>
+                <input type="date" class="form-control py-4 px-4  mr-2 mb-2" placeholder="Departure date"
+                    id="departuredate">
 
-                </div>
-                <div id="LOA" class="form-group  m-2">
-                    <label>Overall length</label>
-                    <input class="form-control py-4 px-4 " input type="number"
-                        placeholder="to nearest metre (round up!) e.g. 8m">
-                </div>
-                <div id="beam" class="form-group m-2">
-                    <label>Boat maximum width (beam)</label>
-                    <input type="number" class="form-control py-4 px-4 mr-2 mb-2"
-                        placeholder="to nearest 10th of a metre">
+            </div>
+            <div id="LOA" class="form-group  m-2">
+                <label>Overall length</label>
+                <input class="form-control py-4 px-4 " input type="number"
+                    placeholder="to nearest metre (round up!) e.g. 8m">
+            </div>
+            <div id="beam" class="form-group m-2">
+                <label>Boat maximum width (beam)</label>
+                <input type="number" class="form-control py-4 px-4 mr-2 mb-2" placeholder="to nearest 10th of a metre">
 
-                </div>
-                <div id="draft" class="form-group  m-2">
-                    <label rows="3">Boat draft (minimum depth of water (m) you're happy with!)</label>
-                    <input type="number" class="form-control py-4 px-4 mr-2 mb-2  pb-4" style="
+            </div>
+            <div id="draft" class="form-group  m-2">
+                <label rows="3">Boat draft (minimum depth of water (m) you're happy with!)</label>
+                <input type="number" class="form-control py-4 px-4 mr-2 mb-2  pb-4" style="
                 align-self:top" placeholder="enter '0' if you are ok with drying moorings)">
 
-                </div>
             </div>
-
-            <div class="col-lg-1" class="filler" style=background:#212529></div>
-
-
-
-            <div id="map" class="col-lg-5">
-            </div>
-
-            <div class="col-lg-1" class="filler" style=background:#212529></div>
         </div>
 
+        <div class="col-lg-1" class="filler" style=background:#212529></div>
+
+
+
+        <div id="map" class="col-lg-5">
+        </div>
+
+        <div class="col-lg-1" class="filler" style=background:#212529></div>
+    </div>
 
 
 
 
-        <script async=false
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBpCWDtOukjD5wmNsrxnUrDHLwas6TQSo&callback=initMap"></script>
 
-        <script src="js/main.js"></script>
+    <script async=false
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBpCWDtOukjD5wmNsrxnUrDHLwas6TQSo&callback=initMap"></script>
+
+    <script src="js/main.js"></script>
 
 
 </body>
