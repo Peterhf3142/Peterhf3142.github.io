@@ -18,7 +18,7 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-right">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-right">
 
 
         <a class="navbar-brand"><img src="img/PMB-logo-v2.png" width=auto height="40px"></img>
@@ -32,13 +32,13 @@
         <div class="collapse navbar-collapse" id="collabsableNavBar">
             <ul class="nav navbar-nav ml-auto mt-2 mt-lg-0 ">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="loginform.html">Login/Register</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Other</a>
+                    <a class="nav-link" href="TandCs.html">Terms & conditions</a>
                 </li>
             </ul>
 
@@ -70,7 +70,7 @@
                 <div id="beam" class="form-group m-2">
                     <label>Boat maximum width (beam)</label>
                     <input type="number" class="form-control py-4 px-4 mr-2 mb-2"
-                        placeholder="to nearest metre, (round up!) e.g. 6.4">
+                        placeholder="to nearest 10th of a metre">
 
                 </div>
                 <div id="draft" class="form-group  m-2">
@@ -79,15 +79,18 @@
                 align-self:top" placeholder="enter '0' if you are ok with drying moorings)">
 
                 </div>
-
-
             </div>
-            <div class="col-lg-1" style="background-color:lavenderblush;"></div>
+
+            <div class="col-lg-1" class="filler" style=background:#212529></div>
+
+
 
             <div id="map" class="col-lg-5">
             </div>
-            <div class="col-1"></div>
+
+            <div class="col-lg-1" class="filler" style=background:#212529></div>
         </div>
+
 
 
 
